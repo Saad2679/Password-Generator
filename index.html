@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Generator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Password Generator</h1>
+        <div class="input-box">
+            <input type="text" class="passBox" id="passBox" placeholder="Your password will appear here" disabled>
+            <span class="material-icons" id="copyicon">content_copy</span>
+        </div>
+        <input type="range" min="10" max="30" value="16" id="inputSlider">
+        <div class="row">
+            <p>Password Length: <span id="sliderValue">16</span></p>
+        </div>
+        <div class="checkbox-row">
+            <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label>
+            <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label>
+            <label><input type="checkbox" id="number" checked> Include Numbers</label>
+            <label><input type="checkbox" id="symbols" checked> Include Symbols</label>
+        </div>
+        <button type="button" class="getBtn" id="getBtn">Generate Password</button>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
